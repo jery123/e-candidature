@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+const user = require('./user');
+const employe = require('./employe');
+const formation = require('./formation');
+const dossier = require('./dossier');
+router.use('/user', user);
+router.use('/formation', formation);
+router.use('/employe', employe);
+router.use('/dossier', dossier);
+module.exports = router;
